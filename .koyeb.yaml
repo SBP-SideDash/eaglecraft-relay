@@ -1,7 +1,7 @@
 name: eaglecraft-relay
 build:
-  type: npm
-  commands:
-    - npm install
+  steps:
+    - name: install dependencies
+      run: npm install
 run:
-  command: node server.js
+  cmd: node server.js
